@@ -1,9 +1,13 @@
 import React from "react";
 
-export function Card({ children }: { children: React.ReactNode }) {
-  return <div className="rounded-lg shadow p-4 bg-white">{children}</div>;
+interface CardProps extends React.HTMLAttributes<HTMLDivElement> {}
+
+export function Card({ className, ...props }: CardProps) {
+  return <div className={`rounded-lg border p-4 ${className || ""}`} {...props} />;
 }
 
-export function CardContent({ children }: { children: React.ReactNode }) {
-  return <div>{children}</div>;
+interface CardContentProps extends React.HTMLAttributes<HTMLDivElement> {}
+
+export function CardContent({ className, ...props }: CardContentProps) {
+  return <div className={`mt-2 ${className || ""}`} {...props} />;
 }
