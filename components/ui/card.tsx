@@ -9,3 +9,14 @@ export function Card({
 }) {
   return <div className={className}>{children}</div>;
 }
+
+export function CardContent({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return <div className={`p-4 ${className || ""}`}>{children}</div>;
+}
+
