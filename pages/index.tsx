@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
@@ -21,10 +22,7 @@ export default function EchoesHome() {
 
       <div className="flex justify-center">
         <div className="relative w-full max-w-xl">
-          <Input
-            placeholder="Search cases, parties, or keywords..."
-            className="pr-10"
-          />
+          <Input placeholder="Search cases, parties, or keywords..." className="pr-10" />
           <Search className="absolute right-3 top-2.5 text-gray-500" />
         </div>
       </div>
@@ -36,21 +34,18 @@ export default function EchoesHome() {
             <p>Track live updates across your litigation universe.</p>
           </CardContent>
         </Card>
-
         <Card>
           <CardContent className="p-4">
             <h2 className="text-xl font-semibold mb-2">Echoes Dockets</h2>
             <p>Access case filings, court actions, and official records.</p>
           </CardContent>
         </Card>
-
         <Card>
           <CardContent className="p-4">
             <h2 className="text-xl font-semibold mb-2">Echoes News</h2>
             <p>Latest media coverage, YouTube reports, and updates.</p>
           </CardContent>
         </Card>
-
         <Card>
           <CardContent className="p-4">
             <h2 className="text-xl font-semibold mb-2">Echoes Chat</h2>
@@ -63,11 +58,8 @@ export default function EchoesHome() {
         <Button className="px-6 py-2 text-lg" onClick={handleLaunchCase}>
           Launch Your First Case
         </Button>
-        <p className="mt-2 text-sm text-gray-500">
-          Jackson v. Atlantic Records
-        </p>
+        <p className="mt-2 text-sm text-gray-500">Jackson v. Atlantic Records</p>
       </div>
     </div>
   );
 }
-
